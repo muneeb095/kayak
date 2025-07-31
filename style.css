@@ -26,6 +26,7 @@
     background-color: var(--white-clr);
     display: flex;
     align-items: center;
+    padding-inline: 1em;
 }
 
 .row {
@@ -39,6 +40,14 @@
 .header .row * {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+
+.header .row,
+.header .row .menu-icons,
+.header .row .menu-icons .menu-form {
+    justify-content: space-between;
 }
 
 .logo {
@@ -55,4 +64,21 @@
 
 .menu-icons {
     width: 80%;
+}
+
+.header .row a {
+    text-decoration-color: transparent;
+    color: var(--black-clr);
+}
+
+.hamburger {
+    background-color: var(--white-clr);
+    border: 1px solid var(--transparent);
+    border-radius: .4em;
+}
+
+.hamburger:hover {
+    background-color: var(--anchor-color);
+    border: 1px solid var(--border-clr);
+    border-radius: .4em;
 }
