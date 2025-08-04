@@ -22,11 +22,12 @@
 }
 
 .header {
-    margin-block: 1.5em;
     background-color: var(--white-clr);
     display: flex;
     align-items: center;
     padding-inline: 1em;
+    padding-block: 1.5em;
+    border-bottom: 1px solid var(--border-clr);
 }
 
 .row {
@@ -63,7 +64,7 @@
 }
 
 .menu-icons {
-    width: 80%;
+    width: 85%;
 }
 
 .header .row a {
@@ -81,4 +82,195 @@
     background-color: var(--anchor-color);
     border: 1px solid var(--border-clr);
     border-radius: .4em;
+}
+
+.menu-form {
+    gap: .3em;
+}
+
+.menu-form .menu {
+    background-color: var(--anchor-color);
+    border-radius: .4em;
+}
+
+
+.menu-form .menu a {
+    background-color: var(--anchor-color);
+    border: 1px solid var(--transparent);
+    padding: .3em .5em;
+    border-radius: .4em;
+}
+
+.menu-form .menu a:hover {
+    background-color: var(--anchor-hover);
+    border: 1px solid var(--border-clr);
+    /* padding: 1em .5em; */
+}
+
+
+.menu a .wh-span {
+    background-color: var(--white-clr);
+    border: 1px solid var(--border-clr);
+    padding: .3em;
+    border-radius: .2em;
+}
+
+.menu a .wh-span:hover {
+    background-color: var(--white-clr);
+    border: 1px solid var(--black-clr);
+    padding: .3em;
+    border-radius: .2em;
+}
+
+.span-area {
+    background-color: var(--transparent);
+    border: 1px solid var(--transparent);
+    padding-block: .3em;
+    border-radius: .2em;
+}
+
+.span-area:hover {
+    background-color: var(--transparent);
+    border: 1px solid var(--transparent);
+    padding-block: .3em;
+    border-radius: .2em;
+}
+
+.search a span {
+    background-color: var(--logo-clr);
+    border: 1px solid var(--border-clr);
+    padding: .5em .5em;
+    border-radius: .4em;
+    color: var(--white-clr);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.search a span:hover {
+    border: 1px solid var(--white-clr);
+    background-color: var(--anchor-color);
+    color: var(--heading-clr);
+    border-radius: .4em;
+
+}
+
+.icons {
+    width: 10%;
+    justify-content: flex-end;
+}
+
+.icons {
+    gap: .5em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.sort .row .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5em;
+    width: 58%;
+    margin-inline: auto;
+    margin-block-start: 1em;
+}
+
+.sort .row .content * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort .row .content a {
+    text-decoration-color: var(--transparent);
+    color: var(--black-clr);
+    padding: .5em;
+    background-color: var(--white-clr);
+    border: 1px solid var(--border-clr);
+    border-radius: .4em;
+    font-weight: 500;
+}
+
+main {
+    background-color: var(--anchor-color);
+}
+
+.book-now {
+    margin-block: 1em;
+}
+
+.book-now .row .content,
+.flight-network .row .content {
+    background-color: var(--white-clr);
+    width: 58%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em .5em;
+    border-radius: .4em;
+    text-decoration-color: var(--transparent);
+    color: var(--black-clr);
+    border: 1px solid var(--border-clr);
+}
+
+.book-now .row .content *,
+.flight-network .row .content * {
+    display: flex;
+    align-items: center;
+}
+
+.flight-network .row .content {
+    transition: border .5s ease-in-out;
+}
+
+.flight-network .row .content:hover {
+    border: 1px solid var(--black-clr);
+}
+
+.flight-network .row .content-area {
+    border-bottom: 1px solid var(--border-clr);
+    border-radius: .4em .4em 0 0;
+}
+
+.book-now .row .content .first {
+    gap: .5em;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.flight-network .row .content-area .img {
+    width: 25%;
+}
+
+.flight-network .row .content-area .text {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flight-network .row .content-area .img img {
+    width: 80%;
+}
+
+.flight-network .content-1 .first {
+    width: 80%;
+    border-right: 1px solid var(--border-clr);
+}
+
+.flight-network .row {
+    flex-direction: column;
+}
+
+.flight-network .content-1 .second {
+    width: 20%;
 }
