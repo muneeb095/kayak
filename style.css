@@ -204,8 +204,7 @@ main {
     margin-block: 1em;
 }
 
-.book-now .row .content,
-.flight-network .row .content {
+.book-now .row .content {
     background-color: var(--white-clr);
     width: 58%;
     margin-inline: auto;
@@ -220,20 +219,9 @@ main {
     border: 1px solid var(--border-clr);
 }
 
-.book-now .row .content *,
-.flight-network .row .content * {
+.book-now .row .content *{
     display: flex;
     align-items: center;
-}
-
-.flight-network .row .content {
-    border-bottom: 1px solid var(--border-clr);
-    transition: border .5s ease-in-out;
-    border-radius: .4em .4em 0 0;
-}
-
-.flight-network .row .content:hover {
-    border: 1px solid var(--black-clr);
 }
 
 .book-now .row .content .first {
@@ -244,30 +232,3 @@ main {
     font-weight: 600;
 }
 
-.flight-network .row .content-area .img {
-    width: 25%;
-}
-
-.flight-network .row .content-area .text{
-    width: 75%;    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}   
-
-.flight-network .row .content-area .img img {
-    width: 80%;
-}
-
-.flight-network .content-1 .first {
-    width: 80%;
-    border-right: 1px solid var(--border-clr);
-}
-
-.flight-network .row {
-    flex-direction: column;
-}
-
-.flight-network .content-1 .second {
-    width: 20%;
-}
